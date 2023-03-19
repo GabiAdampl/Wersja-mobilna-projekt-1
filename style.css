@@ -35,14 +35,16 @@ html {
 }
 
 .nav-button {
-	display: none;
+	height: 50px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 }
 
-.nav-item a {
-	text-decoration: none;
-	font-size: 18px;
-	color: white;
-	padding: 46px;
+.a {
+	display: flex;
+	align-items: center;
+	color: #f1f1f1;
 }
 
 @media screen and (min-width: 768px) {
@@ -79,7 +81,7 @@ html {
 .header-img {
 	height: calc(100vh - 50px);
 	width: 100%;
-	background-image: url('Tło\ sekcji.png');
+	background-image: url('Tło_sekcji.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -425,6 +427,7 @@ html {
 
 	.footer-section {
 		height: 71px;
+		align-items: center;
 	}
 
 	.footer {
