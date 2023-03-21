@@ -32,6 +32,7 @@ html {
 
 .nav-list {
 	list-style: none;
+	display: none;
 }
 
 .nav-button {
