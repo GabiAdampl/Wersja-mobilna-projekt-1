@@ -32,6 +32,7 @@ html {
 
 .nav-list {
 	list-style: none;
+	text-decoration: none;
 	display: none;
 }
 
@@ -56,6 +57,9 @@ html {
 	.nav-item {
 		display: inline-block;
 	}
+	.nav-list {
+		display: none;
+	}
 }
 
 @media screen and (min-width: 1024px) {
@@ -66,6 +70,16 @@ html {
 
 	.nav-logo {
 		margin-left: 0px;
+	}
+
+	.nav-list {
+		display: flex;
+		text-decoration: none;
+	}
+	a {
+		color: white;
+		padding: 46px;
+		text-decoration: none;
 	}
 
 	.nav-item {
@@ -202,6 +216,7 @@ html {
 .specialist-scribd {
 	text-align: justify;
 	margin: 0 15px;
+	font-size: 18px;
 }
 .specialist-scribd h2 {
 	margin-top: 50px;
@@ -299,10 +314,25 @@ html {
 	height: 331px;
 	margin-bottom: 50px;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	transition: all 0.5s ease-in;
 	position: relative;
+}
+.news {
+	font-size: 24px;
+}
+
+.offer-box-item:first-child::before {
+	content: ' ';
+	height: 37px;
+	width: 37px;
+	background: #e07a64;
+	border-radius: 50%;
+	position: absolute;
+	left: -18px;
+	top: -18px;
 }
 
 .offer-box-item p {
@@ -403,13 +433,14 @@ html {
 }
 
 .footer p {
-	font-size: 18px;
+	font-size: 14px;
 	font-style: normal;
 	font-weight: 700;
 	color: #ffff;
 	letter-spacing: 1px;
 	display: flex-inline;
 	padding-bottom: 15px;
+	text-align: center;
 }
 
 .footer i {
